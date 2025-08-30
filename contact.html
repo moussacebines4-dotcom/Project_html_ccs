@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header id="home">
+    <nav class="navbar">
+         <h1 class="logo">BigNova</h1>
+         <ul>
+            <li>
+                <a href="#home">acueil</a>
+            </li>
+            <li>
+                <a href="#about">apropos</a>
+            </li>
+            <li>
+                <a href="#service">service</a>
+            </li>
+            <li>
+                <a href="contact.html">contact</a>
+            </li>
+         </ul>
+
+    </nav>
+
+   </header>   
+   <main>
+    <section id="contact">
+        <h2>conacter nous </h2>
+        <form  class="contact-form">
+            <label for="name">Nom : </label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email : </label>
+            <input type="email" id="email" name="email" required>
+            <label for="message">Message : </label>
+            <textarea name="message" id="message" required rows="5"></textarea>
+            <label >Type de demande : </label>
+            <div class="radio_groupe">
+                <input type="radio" id="formation" name="type" value="formation " checked>
+                <label for="formation">Formation </label>
+                  <input type="radio" id="partenariat" name="type" value="partenariat " >
+                <label for="partenariat">partenariat </label>
+            </div>
+            <label class="checkbox">
+                <input type="checkbox" required/>
+                j'accepte que mes donnees soit utilisés pour me recontacter
+            </label>
+            <button type="submit">Envoyer</button>
+
+
+
+        </form>
+    </section>
+   </main>
+   
+   
+   <footer>
+            <p> &copy; 2025 Bignova ,tous droits réservés</p>
+
+           </footer>
+
+</body>
+</html>
