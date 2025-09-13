@@ -111,3 +111,86 @@ section h2{
     width: 100%;
     border-radius: 10px;
 }
+/*service*/
+.card-container{
+    
+    display: flex;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+
+}
+.card{
+    background: white;
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0,0.1);
+    flex: 1;
+}
+/*valuses*/
+.valuses-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit , minmax(250px ,1fr));
+    gap: 1.5rem;
+}
+.valuses-iten{
+    background: #e9dcf7;
+    padding: 1rem ;
+    border-radius: 10px;
+}
+.valuses-iten h4{
+    margin-bottom: 0.5rem;
+    color: #4a0072;
+}
+
+/*contact form*/
+.contact-form{
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    margin:auto ;
+
+}
+.contact-form label{
+    margin-top: 1rem;
+}
+.contact-form input ,.contact-form textarea{
+    padding: 1.7rem;
+    margin-top: 0.3rem;
+    border: 1px solid #ccc;
+}
+.contact-form .radio-group{
+    display: felex;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 0.5rem;
+}
+.contact-form .radio-group label{
+    margin: 0;
+}
+.contact-form input[type="checkbox"]{
+    margin-right: 0.5rem;
+}
+.contact-form .checkbok{
+    margin-top: 1rem;
+}
+.contact-form button{
+    margin-top: 1.5rem;
+    padding: 0.8rem;
+    background: #6a0dad;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.contact-form button:hover{
+    background: #580a9c;
+}
+/*footer*/
+footer{
+    background: #6a0dad;
+    color: white;
+    text-align:center ;
+    padding: auto;
+    margin-top: auto;
+
+}
