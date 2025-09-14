@@ -16,11 +16,10 @@ body{
 /*navbar*/
 .navbar{
 background: #6a0dad;
-flex-direction: row;
 color: white;
-display:flex;
-justify-content: space-between;
-align-items: center;
+display:flex !important;
+justify-content: space-between !important;
+align-items: center !important;
 padding: 1rem 2rem;
 
 }
@@ -194,3 +193,77 @@ footer{
     margin-top: auto;
 
 }
+/*apliquer les medias queries sur les petits ecrans <=768px*/
+@media (max-width:768px ){
+    .navbar{
+        flex-direction: column !important;
+        align-items: flex-start !important;
+    }
+    .navbar ul{
+        flex-direction: column;
+        gap: 0.5rem;
+        padding-top: 1rem;
+    }
+    .banner{
+        padding: 2rem 1rem;
+    }
+    .banner h2{
+        font-size: 2rem;
+    }
+    .btm-banner{
+        padding: 0.5rem 1.2rem;
+        font-size: 1rem;
+    }
+    .about-content{
+        flex-direction: column;
+        text-align: center;
+    }
+    .about-text .about-img{
+        flex: 1 1 100%;
+    }
+    .about-text p{
+        max-width: 100%;
+    }
+    .card-container{
+        flex-direction: column;
+    }
+    .card{
+        max-width: 100%;
+    }
+    .valuses-grid{
+        grid-template-columns: 1fr;
+    }
+    
+
+
+}
+
+
+/* apliquer les medias queries sur les petits ecrans <=480*/ 
+ @media (max-width:480px){
+    .navbar{
+        padding: 1rem;
+    }
+    .navbar .logo{
+        font-size: 1.2rem;
+    }
+    .banner h2{
+        font-size: 1.6rem;
+    }
+    .banner p{
+        font-size: 1rem;
+    }
+    .btm-banner{
+        font-size: 0.9rem;
+        padding: 0.5rem 1rem;
+    }
+    .card{
+        padding: 1rem;
+    }
+    .valuses-iten{
+        padding: 0.8rem;
+    }
+    .contact-form{
+        padding: 0 1rem;
+    }
+} 
